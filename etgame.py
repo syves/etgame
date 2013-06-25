@@ -16,14 +16,19 @@ adjectives_bad = {'evil': 1,'immoral': 1, 'wicked': 2, 'corrupt': 2,'sinful': 2,
 
 random_word = choice(adjectives_bad.keys())
 
+print "lets make our own version of a popluar poem..."
+word1 = raw_input('"Plural noun"--> ')
+word2 = raw_input('"Adjective"--> ')
+word3 = raw_input('"Plural noun"--> ')
+word4 = raw_input('"Adjective"--> ')
+word5 = raw_input('"Singular noun"--> ')
+word6 = raw_input('"Adjective"--> ')
 # Replaces %s with the variable after '%'
-print "What is a synonym for '%s'?" % random_word
-user_input = raw_input('--> ')
-if user_input in adjectives_bad.keys():
-  score = str(adjectives_bad[user_input])
-else:
-  score = 0
+print "%s are %s" % (word1, word2) 
+print "%s are %s" % (word3, word4)
+print "%s is %s" % (word5, word6)
+print "and so are You!"
 
-print "You chose '%s'. Your score is: %s!" % (user_input, score)
+
 
 
